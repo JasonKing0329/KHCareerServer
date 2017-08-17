@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <servlet>
+        <description>Check whether server is connected</description>
+        <display-name>Check whether server is connected</display-name>
+        <servlet-name>ConnectionServlet</servlet-name>
+        <servlet-class>com.king.mytennis.server.ConnectionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ConnectionServlet</servlet-name>
+        <url-pattern>/online</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <description>Check app version</description>
+        <servlet-name>CheckServlet</servlet-name>
+        <servlet-class>com.king.mytennis.server.CheckServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CheckServlet</servlet-name>
+        <url-pattern>/checkNew</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <description>Download file</description>
+        <servlet-name>DownloadServlet</servlet-name>
+        <servlet-class>com.king.mytennis.server.DownloadServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DownloadServlet</servlet-name>
+        <url-pattern>/download</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <description>get image list</description>
+        <servlet-name>ImageServlet</servlet-name>
+        <servlet-class>com.king.mytennis.server.ImageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ImageServlet</servlet-name>
+        <url-pattern>/getImages</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>

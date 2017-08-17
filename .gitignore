@@ -1,0 +1,7 @@
+*.iml
+/.idea
+/out
+/web/conf.properties
+/web/img_head_player
+/web/img_match
+/web/img_player
