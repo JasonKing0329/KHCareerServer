@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" build-on-make="true" name="KHCareerServer:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/KHCareerServer_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="KHCareerServer/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="KHCareerServer" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

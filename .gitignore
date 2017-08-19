@@ -1,5 +1,4 @@
 *.iml
-/.idea
 /out
 /web/conf.properties
 /web/img_head_player
