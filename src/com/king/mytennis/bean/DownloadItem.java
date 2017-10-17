@@ -17,7 +17,7 @@ public class DownloadItem {
      */
     private String flag;
     /**
-     * 下载文件的�?�大�?
+     * 下载文件的大小
      */
     private long size;
 
